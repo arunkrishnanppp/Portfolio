@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+.homeScreen {
+  width: 90%;
+  padding: 30px 50px;
+
+  font-family: "Poppins", sans-serif;
+}
+.homeScreen {
+  display: flex;
+}
+.joinme {
+  line-height: 50px;
+  color: #868e96;
+}
+.subTitile {
+  color: #868e96 !important;
+}
+.homeScreen > * {
+  flex: 1;
+  margin-bottom: 20px;
+}
+.button_greeting_div {
+  display: flex;
+  margin-top: 20px;
+}
+.greeting_text {
+  font-size: 50px;
+  line-height: 1.1;
+  color: black;
+  margin-bottom: 10px;
+  font-family: "Bassy";
+}
+
+.greeting_ptext {
+  font-size: 20px;
+  line-height: 30px;
+}
+.dark_mode {
+  color: white;
+}
+
+.wave_emoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* media querys/ */
+@media (max-width: 2032px) {
+  .greeting_text {
+    font-size: 75px;
+  }
+}
+@media (max-width: 1180px) {
+  .greeting_text {
+    font-size: 45px;
+  }
+}
+@media (max-width: 1037px) {
+  .homeScreen {
+    width: auto;
+    padding: 20px 50px;
+  }
+}
+@media (max-width: 768px) {
+  .button_greeting_div {
+    justify-content: space-around;
+  }
+  .greeting_text {
+    font-size: 30px;
+    text-align: center;
+  }
+  .greeting_ptext {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+  .homeScreen {
+    display: block;
+  }
+}
+@media (max-width: 345px) {
+  .button_greeting_div {
+    display: flex;
+    flex-direction: column;
+  }
+}

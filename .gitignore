@@ -2,15 +2,17 @@
 
 # dependencies
 /node_modules
-/.pnp
-.pnp.js
 
 # testing
 /coverage
-
+/src/assets
 # production
 /build
 
+#files
+
+*.png
+*.jpg
 # misc
 .DS_Store
 .env.local
@@ -18,6 +20,3 @@
 .env.test.local
 .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*

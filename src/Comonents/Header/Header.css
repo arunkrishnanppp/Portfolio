@@ -1,0 +1,237 @@
+/* //header/ */
+.header {
+  background-color: #fff;
+  max-width: 100%;
+  padding: 15px 20px;
+  margin: 0px auto;
+}
+.dark-menu .logo-name {
+  color: white;
+}
+
+/* header logo// */
+.header .logo {
+  display: flex;
+  flex: none;
+  float: left;
+  font-size: 2.6em;
+  text-decoration: none;
+  margin-top: 10px;
+  line-height: normal;
+}
+.avatar {
+  transition: transform 0.2s;
+  margin-left: 5px;
+  width: 100%;
+}
+.avatar:hover {
+  transform: scale(1.2);
+}
+.header .logo-name {
+  font-family: "Bassy";
+  font-weight: bold;
+  /* font-variant-ligatures: no-common-ligatures;
+  -webkit-font-variant-ligatures: no-common-ligatures; */
+  padding: 0 10px;
+}
+.grey-color {
+  color: #868e96;
+}
+
+/* menu button and label/ */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.header .menu-icon .navicon-dark {
+  background: white !important;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon-dark:before,
+.header .menu-icon .navicon-dark:after {
+  background: white !important;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+/* condiftion on checking  */
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 486px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+/* .header .menu-btn:checked ~ .menu-icon .navicon {
+  transform: rotate(50deg);
+} */
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(180deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(180deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before,
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  top: 0;
+}
+
+/* ---------------------- */
+
+/* Menu/ */
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+/*Header UL */
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.header li a:hover {
+  color: #55198b;
+}
+
+.header li a {
+  display: block;
+  padding: 15px 20px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+/* .header li a:hover, */
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+.dark-menu {
+  /* background-color: #171c28 !important; */
+  /* background-color: #181818; */
+  /* background-image: linear-gradient(#161618, black); */
+  background-color: #0a0a0a;
+  color: white;
+}
+
+.dark-menu li a {
+  color: white !important;
+}
+
+.dark-menu li a :hover {
+  /* color: #55198b !important; */
+}
+
+/* .dark-menu li a:hover {
+  background-color: #55198b !important;
+} */
+
+@media (min-width: 1180px) {
+  .header li {
+    float: left;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header .menu {
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+@media (max-width: 48em) {
+  .swicth {
+    display: block;
+    /* left: 0px; */
+    /* margin-left: 50%;
+    margin-right: 50%;
+    text-align: center;
+    /* margin-top: 10px; */
+    float: right;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+  /* body {
+    background-color: red;
+  } */
+}
+@media (max-width: 960px) and (min-width: 768px) {
+  .header {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1179px) {
+  .swicth {
+    display: flex;
+    /* align-items: center; */
+    align-items: center;
+    /* justify-content: ; */
+    float: right;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,73 @@
+.education_class {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid white; */
+  margin: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.education_class > h1 {
+  text-align: center;
+}
+
+.ed_div {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 14px;
+  border-radius: 20px;
+  margin-top: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+.darkdiv {
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 0px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.details h1 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.details h2 {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.details h3 {
+  margin-left: 20px;
+  margin-top: 20px;
+  color: grey;
+}
+
+@media (max-width: 1193px) {
+  .details {
+    margin-left: 30px;
+  }
+  .details h1 {
+    font-size: 25px;
+  }
+  .details h2 {
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+  }
+  .details h3 {
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+  }
+  .ed_div {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+  .lotty {
+    object-fit: contain;
+    width: 100px;
+  }
+}

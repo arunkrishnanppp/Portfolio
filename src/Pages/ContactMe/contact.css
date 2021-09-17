@@ -1,0 +1,77 @@
+/* #858D95 */
+.contactme {
+  text-align: center;
+  /* background-color: #171c28; */
+  background-color: #0a0a0a;
+  color: white;
+
+  padding: 30px;
+  line-height: 22px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contactContainer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.contact {
+  display: flex;
+  /* flex-direction: column; */
+}
+.social {
+  flex: 1;
+  /* display: inline; */
+}
+.adddress {
+  flex: 2;
+}
+.adddress {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+.contact_detail,
+.contact_detail_email {
+  font-weight: 400;
+  color: #868e96;
+  text-decoration: none;
+}
+.title {
+  border-bottom: 2px solid white;
+}
+
+@media (max-width: 882px) {
+  .contact {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: 882px) {
+  .title {
+    padding: 10px;
+  }
+}
+
+.adddress i {
+  margin-right: 10px;
+}
+.add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myname {
+  font-family: "Birdlove";
+  font-size: 30px;
+  bottom: 0px;
+  /* color:; */
+}
+
+@media (max-width: 796px) {
+  .title {
+    padding: 10px;
+  }
+}

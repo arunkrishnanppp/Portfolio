@@ -1,0 +1,135 @@
+.experience_container {
+  /* padding: 30px; */
+  margin: 30px;
+  /* margin-top: 100px;
+  padding-top: 100px; */
+  /* height: 100%; */
+  font-family: "Poppins", sans-serif;
+  /* background-color: #171c28; */
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.experience_container h1 {
+  text-align: center;
+}
+.experience {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+}
+.exp_div {
+  /* height: px; */
+  display: flex;
+  /* width: 300px; */
+  /* border: 2px solid rgb(0, 0, 0); */
+  border-radius: 10px;
+  margin-top: 10px;
+  /* box-shadow: 5px 10px; */
+  /* box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px; */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 14px;
+}
+.darkdivexp {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 5px 0px,
+    rgba(255, 255, 255, 0.1) 0px 0px 1px 0px;
+}
+.companydiv {
+  margin: 10px;
+  flex: 1;
+}
+.companydiv h3 {
+  /* font-size: 66px; */
+}
+.companydiv .image {
+  object-fit: contain;
+  width: 100px;
+  border-radius: 50px;
+}
+.exp {
+  flex: 2;
+  text-align: center;
+  padding: 20px;
+}
+.exp h2 {
+  font-size: 16px;
+  border-bottom: 2px solid grey;
+}
+.exp ul {
+  margin-top: 20px;
+  list-style: none;
+}
+.exp ul li {
+  margin-top: 10px;
+  font-size: 12px;
+  align-items: left;
+  text-align: left;
+  list-style-type:disc;
+  padding-left: 20px;
+}
+.lotty {
+  text-align: center;
+  align-items: center;
+  object-fit: contain;
+  width: 80px;
+}
+
+.lotty span {
+  font-size: 10px;
+  font-weight: bold;
+}
+@media (min-width: 1240px) {
+  .exp_div {
+    width: 400px;
+  }
+}
+@media (min-width: 1098px) {
+  .experience_container {
+    /* display: block; */
+    /* margin-top: 100px; */
+  }
+  .exp_div {
+    width: 400px;
+  }
+  .companydiv h3 {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 880px) {
+  .companydiv .image {
+    object-fit: contain;
+    width: 80px;
+    border-radius: 50px;
+  }
+  .exp_div {
+    margin-left: 10px;
+  }
+  .companydiv h3 {
+    font-size: 12px;
+    /* text-align: center; */
+  }
+}
+@media (max-width: 450px) {
+  .exp h2 {
+    font-size: 12px;
+    border-bottom: 2px solid white;
+  }
+  .exp ul li {
+    font-size: 10px;
+  }
+}
+@media (max-width: 474px) {
+  .exp_div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+}

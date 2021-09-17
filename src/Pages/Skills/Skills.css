@@ -1,0 +1,46 @@
+#skills {
+  /* padding-top: 100px; */
+  font-family: "Poppins", sans-serif;
+}
+.skills_div {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+}
+.skills_div p {
+  font-family: "Poppins", sans-serif;
+}
+.skils_illustration_div {
+  flex: 1;
+  float: left;
+}
+.skils_content_div {
+  flex: 1;
+  float: right;
+}
+.skills_content_title {
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+.skills_content_sub {
+  font-size: 1rem;
+  margin-bottom: 18px;
+}
+.subskills {
+  color: grey;
+}
+.subskillsDef {
+  font-size: 15px;
+}
+@media (max-width: 768px) {
+  .skills_div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .skills {
+    margin: 0;
+  }
+}
